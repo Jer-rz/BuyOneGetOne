@@ -46,7 +46,7 @@ Thumbs.db
 # Ignore OS temporary files
 *.swp
 *.swo
-*.lock
+
 
 # Ignore other build files, compiled files etc.
 .byebug_history
