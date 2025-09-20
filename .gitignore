@@ -1,0 +1,52 @@
+# Ignore bundler config and cached gems
+/.bundle
+/vendor/bundle
+/vendor/ruby
+.env
+# Ignore system / OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temp files
+/log/*
+/tmp
+/tmp/**/*
+
+# Ignore PID and socket files
+/tmp/pids/*
+/tmp/sockets/*
+/tmp/cache/**/*
+
+# Ignore credentials master key (if generated)
+/config/master.key
+
+
+# Ignore uploaded files (if using CarrierWave, Paperclip, ActiveStorage local files, etc.)
+/public/system/*
+/public/uploads/*
+/storage/*   # if using local storage for ActiveStorage
+
+# Ignore compiled assets
+/public/assets/*
+/public/packs/*
+/public/packs-test/*
+/node_modules/
+
+# Ignore test or coverage artifacts
+/coverage/
+/spec/tmp/
+/tmp/*
+
+# Ignore editor or IDE config
+.idea/
+/.vscode/
+/*.sublime-project
+/*.sublime-workspace
+
+# Ignore OS temporary files
+*.swp
+*.swo
+*.lock
+
+# Ignore other build files, compiled files etc.
+.byebug_history
