@@ -8,8 +8,6 @@ class OrderItem < ApplicationRecord
   def check_for_discount
     if self.quantity >= 3
       apply_special_discount
-    elsif self.quantity == 1
-      apply_green_tea_offer
     else
       set_normal_price
     end
@@ -17,6 +15,7 @@ class OrderItem < ApplicationRecord
 
   def set_normal_price
     self.price = product.price * self.quantity
+    apply_green_tea_offer
   end
 
   def apply_special_discount
@@ -41,9 +40,6 @@ class OrderItem < ApplicationRecord
   def apply_green_tea_offer
     if product.name == "Green Tea"
       self.quantity += 1
-      self.price = product.price
-    else
-      set_normal_price
     end
   end
 end
