@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction:column; align-items: center; width: 100%;">
+    <h1 style="text-align:center;">Hello there!</h1>
+    <h4>These are our products:</h4>
+    <% @products.each do |p| %>
+        <p>Code: <%= p.code %></p>
+        <p>Name: <%= p.name %></p>
+        <p>Price: <%= p.price %></p>
+    <%end%>
+ </div>
