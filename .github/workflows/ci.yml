@@ -77,7 +77,7 @@ jobs:
       POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
       DB_NAME_DEVELOPMENT: ${{ secrets.DB_NAME_DEVELOPMENT }}
       DB_NAME_TEST: ${{ secrets.DB_NAME_TEST }}
-      DB_NAME: ${{ secrets.DB_NAME }}
+      DB_NAME_PRODUCTION: ${{ secrets.DB_NAME_PRODUCTION }}
       DB_POOL: ${{ secrets.DB_POOL }}
 
     steps:

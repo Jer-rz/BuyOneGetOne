@@ -83,7 +83,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: <%= ENV.fetch("DB_NAME") %>
+    database: <%= ENV.fetch("DB_NAME_PRODUCTION") %>
     username: <%= ENV.fetch("POSTGRES_USER") %>
     password: <%= ENV["POSTGRES_PASSWORD"] %>
     url: <%= ENV["DATABASE_URL"] %>

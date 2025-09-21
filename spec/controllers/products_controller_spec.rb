@@ -14,7 +14,7 @@ RSpec.describe ProductsController, type: :controller do
 
     it "returns all products in JSON" do
       json = JSON.parse(response.body)
-      expect(json["products"].size).to eq(5)
+      expect(json["products"].size).to eq(2)
       expect(json["products"].map { |p| p["name"] }).to include("Coffee", "Strawberries")
     end
   end

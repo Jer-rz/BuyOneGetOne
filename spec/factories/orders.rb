@@ -4,7 +4,7 @@ FactoryBot.define do
 
     trait :with_items do
       transient do
-        items_count { 2 } 
+        items_count { 2 }
       end
 
       after(:create) do |order, evaluator|
